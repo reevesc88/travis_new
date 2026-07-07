@@ -1,0 +1,337 @@
+# Instincts generated from https://github.com/reevesc88/travis_new
+# Generated: 2026-07-07T16:19:50.952Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: travis_new-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/reevesc88/travis_new
+---
+
+# Travis_new Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: feat
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: feat: wire CodeRabbit + Copilot review bots (v3, github-script v9, job-level permissions)
+
+---
+id: travis_new-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/reevesc88/travis_new
+---
+
+# Travis_new Commit Length
+
+## Action
+
+Write moderate-length commit messages (~89 characters)
+
+## Evidence
+
+- Average commit message length: 89 chars
+- Based on 1 commits
+
+---
+id: travis_new-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/reevesc88/travis_new
+---
+
+# Travis_new Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: travis_new-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/reevesc88/travis_new
+---
+
+# Travis_new Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: travis_new-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/reevesc88/travis_new
+---
+
+# Travis_new Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: travis_new-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/reevesc88/travis_new
+---
+
+# Travis_new Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: travis_new-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: reevesc88/travis_new
+---
+
+# Travis_new Instinct File Naming
+
+## Action
+
+Name the file using kebab-case
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: travis_new-instinct-function-naming
+trigger: "When declaring a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: reevesc88/travis_new
+---
+
+# Travis_new Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: travis_new-instinct-class-naming
+trigger: "When declaring a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: reevesc88/travis_new
+---
+
+# Travis_new Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: travis_new-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: reevesc88/travis_new
+---
+
+# Travis_new Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: travis_new-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: reevesc88/travis_new
+---
+
+# Travis_new Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: travis_new-instinct-export-style
+trigger: "When exporting from a module"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: reevesc88/travis_new
+---
+
+# Travis_new Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: travis_new-instinct-git-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: reevesc88/travis_new
+---
+
+# Travis_new Instinct Git Commit Format
+
+## Action
+
+Use the conventional commit format with the 'feat' prefix for features
+
+## Evidence
+
+- Pattern in commits.prefixes
+- Seen in commit: 'feat: wire CodeRabbit + Copilot review bots (v3, github-script v9, job-level permissions)'
+
+---
+id: travis_new-instinct-git-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: reevesc88/travis_new
+---
+
+# Travis_new Instinct Git Commit Length
+
+## Action
+
+Keep the commit message around 89 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength
+
+---
+id: travis_new-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: reevesc88/travis_new
+---
+
+# Travis_new Instinct Test Location
+
+## Action
+
+Place test files in a separate location from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: travis_new-instinct-workflow-coderabbit
+trigger: "When configuring CI/CD workflows"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: reevesc88/travis_new
+---
+
+# Travis_new Instinct Workflow Coderabbit
+
+## Action
+
+Include a workflow file at .github/workflows/coderabbit-trigger.yml
+
+## Evidence
+
+- Pattern in architecture.configFiles
+
+---
+id: travis_new-instinct-workflow-copilot
+trigger: "When configuring CI/CD workflows"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: reevesc88/travis_new
+---
+
+# Travis_new Instinct Workflow Copilot
+
+## Action
+
+Include a workflow file at .github/workflows/copilot-review.yml
+
+## Evidence
+
+- Pattern in architecture.configFiles
+
